@@ -1,6 +1,6 @@
 {
   "name": "m_26-atm-program",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "cli based atm program",
   "main": "index.js",
   "type": "module",

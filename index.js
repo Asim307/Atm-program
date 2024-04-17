@@ -39,8 +39,12 @@ if (pinans.pin === mypin) {
                 type: "list",
                 choices: ["5000", "10000", "15000", "20000"],
             }]);
-        if (fastcashans.fastcash) {
-            console.log("you have cash withdraw pkr " + fastcashans.fastcash);
+        if (fastcashans.fastcash > 20000) {
+            console.log("unsufficient balance");
+        }
+        else {
+            mybalance -= fastcashans.fastcash;
+            console.log(`"you have cash withdraw pkr " ${fastcashans.fastcash} "your remaining balance is " ${mybalance}`);
         }
     }
 }
